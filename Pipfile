@@ -3,9 +3,8 @@ name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
 
-[dev-packages]
-ipython = "*"
-ipdb = "*"
+[requires]
+python_version = "3.6"
 
 [packages]
 requests = "*"
@@ -17,5 +16,7 @@ jupyter = "*"
 matplotlib = "*"
 seaborn = "*"
 
-[requires]
-python_version = "3.6"
+[dev-packages]
+ipython = "*"
+ipdb = "*"
+pytest = "*"
