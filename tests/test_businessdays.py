@@ -6,8 +6,10 @@ import pytest
 import businessdays
 from datetime import datetime, timedelta
 
+
 @pytest.mark.parametrize(
-        "start_date, end_date, expected_duration", [
+    "start_date, end_date, expected_duration",
+    [
         # Dates are a datetime tuple of Year, Month, Day, Hour.
         # Expected duration is in days and hours.
         # One hour
@@ -39,7 +41,8 @@ from datetime import datetime, timedelta
         # Fri @ 1am - Tue @ 1am in two weeks.
         # Spans 2 weekends.
         ((2018, 1, 5, 1), (2018, 1, 16, 1), (7, 0)),
-    ])
+    ],
+)
 def test_business_days_duration(start_date, end_date, expected_duration):
     start = datetime(*start_date)
     end = datetime(*end_date)
