@@ -2,3 +2,5 @@ __pycache__/
 *.py[cod]
 /.env
 /notebooks/.ipynb_checkpoints/
+*.parq
+*.jsonl
