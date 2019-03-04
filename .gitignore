@@ -4,3 +4,5 @@ __pycache__/
 /notebooks/.ipynb_checkpoints/
 *.parq
 *.jsonl
+*.csv
+.~*
